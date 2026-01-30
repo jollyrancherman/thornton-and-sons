@@ -5,8 +5,15 @@ export async function updateSession(request: NextRequest) {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  // If Supabase isn't configured, just pass through (but block admin routes)
-  if (!supabaseUrl || !supabaseAnonKey || supabaseUrl === 'https://your-project.supabase.co') {
+  // If Supabase isn't configured or using placeholder values, just pass through
+  const isPlaceholder = !supabaseUrl || !supabaseAnonKey ||
+      supabaseUrl.includes('your-project') ||
+      supabaseUrl.includes('placeholder') ||
+      supabaseAnonKey === 'placeholder-anon-key' ||
+      supabaseAnonKey.includes('your-') ||
+      !supabaseUrl.includes('.supabase.co');
+
+  if (isPlaceholder) {
     // Block admin routes when Supabase isn't configured
     if (request.nextUrl.pathname.startsWith("/admin") && request.nextUrl.pathname !== "/admin/login") {
       const url = request.nextUrl.clone();
