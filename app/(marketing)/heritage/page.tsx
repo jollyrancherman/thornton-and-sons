@@ -12,7 +12,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thorton & Sons | Heritage Craftsman",
+  title: "Thornton & Sons | Heritage Craftsman",
   description:
     "Three generations of traditional woodworking excellence. Handcrafted furniture with timeless elegance from Gardnerville, Nevada.",
 };

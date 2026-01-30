@@ -43,7 +43,7 @@ export function ThemeSwitcher({ theme }: ThemeSwitcherProps) {
                 color: theme.colors.secondary,
               }}
             >
-              Thorton & Sons
+              Thornton & Sons
             </Link>
 
             {/* Theme Links */}
@@ -119,7 +119,7 @@ export function ThemeSwitcher({ theme }: ThemeSwitcherProps) {
               }}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Thorton & Sons
+              Thornton & Sons
             </Link>
 
             {/* Mobile Menu Button */}

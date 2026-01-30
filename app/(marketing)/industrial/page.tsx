@@ -12,7 +12,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thorton & Sons | Industrial Heritage",
+  title: "Thornton & Sons | Industrial Heritage",
   description:
     "Workshop-inspired furniture built with industrial precision and artisan care. From our shop in Gardnerville, Nevada.",
 };

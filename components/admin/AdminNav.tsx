@@ -44,7 +44,7 @@ export function AdminNav() {
           {/* Logo */}
           <div className="flex items-center h-16 px-4 bg-gray-800">
             <Link href="/admin" className="text-xl font-bold text-white font-serif">
-              Thorton & Sons
+              Thornton & Sons
             </Link>
           </div>
 
@@ -83,7 +83,7 @@ export function AdminNav() {
       <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-gray-900">
         <div className="flex items-center justify-between h-16 px-4">
           <Link href="/admin" className="text-xl font-bold text-white font-serif">
-            Thorton & Sons
+            Thornton & Sons
           </Link>
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}

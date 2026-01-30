@@ -81,7 +81,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Thorton and Sons | Premium Woodworking",
+  title: "Thornton and Sons | Premium Woodworking",
   description:
     "Handcrafted furniture and woodworking from Gardnerville, Nevada. Custom pieces built with generations of expertise.",
   keywords: [

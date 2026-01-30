@@ -11,14 +11,14 @@ interface TestimonialsProps {
 const testimonials = [
   {
     quote:
-      "The dining table Thorton & Sons created for us is absolutely stunning. It's become the centerpiece of our home, and we know it will be passed down for generations.",
+      "The dining table Thornton & Sons created for us is absolutely stunning. It's become the centerpiece of our home, and we know it will be passed down for generations.",
     author: "Sarah & Michael Chen",
     location: "Reno, NV",
     initials: "SC",
   },
   {
     quote:
-      "Working with the Thorton family was a pleasure from start to finish. They truly listened to what we wanted and delivered a piece that exceeded our expectations.",
+      "Working with the Thornton family was a pleasure from start to finish. They truly listened to what we wanted and delivered a piece that exceeded our expectations.",
     author: "James Hartley",
     location: "Lake Tahoe, CA",
     initials: "JH",

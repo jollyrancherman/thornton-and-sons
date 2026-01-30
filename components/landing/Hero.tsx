@@ -103,7 +103,7 @@ export function Hero({ theme }: HeroProps) {
           className={layout.heading}
           style={{ fontFamily: theme.fonts.heading }}
         >
-          Thorton & Sons
+          Thornton & Sons
         </h1>
         <p
           className={layout.subheading}

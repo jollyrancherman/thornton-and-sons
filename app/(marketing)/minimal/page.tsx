@@ -12,7 +12,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thorton & Sons | Minimal Craft",
+  title: "Thornton & Sons | Minimal Craft",
   description:
     "Modern handcrafted furniture that lets the wood speak for itself. Clean designs, exceptional craftsmanship from Gardnerville, Nevada.",
 };

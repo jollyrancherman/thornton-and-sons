@@ -20,7 +20,7 @@ export function Footer({ theme }: FooterProps) {
   const socialLinks = [
     { icon: Facebook, label: "Facebook", href: "#" },
     { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Mail, label: "Email", href: "mailto:hello@thortonandsons.com" },
+    { icon: Mail, label: "Email", href: "mailto:hello@thorntonandsons.com" },
   ];
 
   return (
@@ -39,7 +39,7 @@ export function Footer({ theme }: FooterProps) {
                 color: theme.colors.secondary,
               }}
             >
-              Thorton & Sons
+              Thornton & Sons
             </h3>
             <p
               className="text-sm leading-relaxed"
@@ -132,7 +132,7 @@ export function Footer({ theme }: FooterProps) {
             </div>
             <div className="space-y-2">
               <a
-                href="mailto:hello@thortonandsons.com"
+                href="mailto:hello@thorntonandsons.com"
                 className="block text-sm transition-colors duration-200"
                 style={{
                   fontFamily: theme.fonts.body,
@@ -148,7 +148,7 @@ export function Footer({ theme }: FooterProps) {
                   e.currentTarget.style.color = theme.colors.secondary;
                 }}
               >
-                hello@thortonandsons.com
+                hello@thorntonandsons.com
               </a>
               <a
                 href="tel:+17755550123"
@@ -189,7 +189,7 @@ export function Footer({ theme }: FooterProps) {
               opacity: 0.6,
             }}
           >
-            © {currentYear} Thorton & Sons. All rights reserved.
+            © {currentYear} Thornton & Sons. All rights reserved.
           </p>
           <p
             className="text-sm text-center sm:text-right"

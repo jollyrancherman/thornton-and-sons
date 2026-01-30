@@ -190,7 +190,7 @@ export function About({ theme }: AboutProps) {
               }}
             >
               <p>
-                Since 1952, the Thorton family has been crafting exceptional
+                Since 1952, the Thornton family has been crafting exceptional
                 furniture in the heart of Nevada. What began as a small workshop
                 has grown into a legacy of quality and artistry.
               </p>

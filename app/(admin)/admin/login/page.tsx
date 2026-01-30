@@ -61,7 +61,7 @@ function LoginForm() {
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 font-serif">
-            Thorton & Sons
+            Thornton & Sons
           </h1>
           <h2 className="mt-2 text-xl text-gray-600">Admin Login</h2>
         </div>
@@ -91,7 +91,7 @@ function LoginForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="admin@thortonandsons.com"
+                placeholder="admin@thorntonandsons.com"
               />
             </div>
 

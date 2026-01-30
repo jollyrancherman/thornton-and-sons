@@ -12,7 +12,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thorton & Sons | Artisan Warmth",
+  title: "Thornton & Sons | Artisan Warmth",
   description:
     "Warm, welcoming handcrafted furniture with a personal touch. Family-owned craftsmanship from Gardnerville, Nevada.",
 };
@@ -61,7 +61,7 @@ export default function ArtisanPage() {
             className="mt-2 text-sm"
             style={{ color: theme.colors.accent }}
           >
-            — The Thorton Family
+            — The Thornton Family
           </p>
         </div>
       </section>

@@ -56,7 +56,7 @@ export function Contact({ theme }: ContactProps) {
     {
       icon: Mail,
       label: "Email Us",
-      value: "hello@thortonandsons.com",
+      value: "hello@thorntonandsons.com",
     },
     {
       icon: Clock,

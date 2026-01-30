@@ -1,4 +1,4 @@
--- Thorton and Sons Database Schema
+-- Thornton and Sons Database Schema
 -- Run this in the Supabase SQL Editor
 
 -- Enable UUID extension
