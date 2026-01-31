@@ -4,7 +4,7 @@ import Image from 'next/image';
 export function AboutSection() {
   const stats = [
     { icon: Clock, value: '33+', label: 'Years Experience' },
-    { icon: Users, value: '3', label: 'Generations' },
+    { icon: Users, value: '500+', label: 'Happy Clients' },
     { icon: Award, value: '100%', label: 'Satisfaction Rate' },
     { icon: CheckCircle, value: '$30k-500k', label: 'Project Range' },
   ];
