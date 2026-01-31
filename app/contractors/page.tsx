@@ -1,6 +1,6 @@
 import { Navigation } from '@/components/navigation';
 import { Footer } from '@/components/footer';
-import { CheckCircle, Phone, Mail, Clock, Award, Users, Truck } from 'lucide-react';
+import { CheckCircle, Phone, Clock, Award, Users, Truck } from 'lucide-react';
 
 export const metadata = {
   title: 'For Contractors | Thornton & Sons Custom Cabinetry',
@@ -47,34 +47,34 @@ export default function ContractorsPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative min-h-[66vh] flex items-center text-white">
+      <section className="relative min-h-[66vh] flex items-center text-white pt-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/hero/IMG_3089_enhanced.jpg)' }}
         />
         <div className="absolute inset-0 bg-black/20" />
-        <div className="container-custom relative z-10">
-          <div className="max-w-2xl bg-white/10 backdrop-blur-md border border-white/20 rounded-xs p-8 md:p-12 shadow-2xl">
-            <p className="font-script text-4xl md:text-5xl text-brand-blue mb-1">
+        <div className="container-custom relative z-10 py-8 sm:py-12">
+          <div className="max-w-2xl bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-5 sm:p-8 md:p-12 shadow-2xl">
+            <p className="font-script text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-brand-blue mb-1">
               Partner With Us
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
+            <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6">
               Built for Builders
             </h1>
-            <p className="text-xl text-white/90 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed mb-6 sm:mb-8">
               Join the network of contractors who trust Thornton & Sons for premium custom cabinetry.
               We make it easy to deliver exceptional results to your clients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-md hover:bg-brand-blue/90 transition-all duration-200 font-semibold text-lg"
+                className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-5 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-brand-blue/90 transition-all duration-200 font-semibold text-base sm:text-lg min-h-[48px]"
               >
                 Become a Partner
               </a>
               <a
                 href="tel:+17759013743"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/20 transition-all duration-200 font-semibold text-lg border border-white/30"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white px-5 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-white/20 transition-all duration-200 font-semibold text-base sm:text-lg border border-white/30 min-h-[48px]"
               >
                 <Phone className="w-5 h-5" />
                 Call Us Direct
@@ -85,29 +85,29 @@ export default function ContractorsPage() {
       </section>
 
       {/* Benefits */}
-      <section className="section-padding bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-brand-dark mb-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold text-brand-dark mb-3 sm:mb-4">
               Why Contractors Choose Us
             </h2>
-            <p className="text-xl text-brand-gray max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-brand-gray max-w-2xl mx-auto px-2">
               We understand the unique needs of builders and contractors working on high-end residential projects.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
-                <div key={index} className="text-center p-6">
-                  <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-brand-blue" />
+                <div key={index} className="text-center p-3 sm:p-4 md:p-6">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-brand-blue" />
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-dark mb-2">
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-brand-dark mb-1 sm:mb-2">
                     {benefit.title}
                   </h3>
-                  <p className="text-brand-gray">
+                  <p className="text-xs sm:text-sm md:text-base text-brand-gray">
                     {benefit.description}
                   </p>
                 </div>
@@ -118,55 +118,55 @@ export default function ContractorsPage() {
       </section>
 
       {/* Services */}
-      <section className="section-padding bg-brand-light">
+      <section className="py-12 sm:py-16 md:py-24 bg-brand-light">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
             <div>
-              <h2 className="font-heading text-3xl md:text-4xl font-semibold text-brand-dark mb-6">
+              <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold text-brand-dark mb-4 sm:mb-6">
                 Full-Service Cabinetry Solutions
               </h2>
-              <p className="text-lg text-brand-gray mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-brand-gray mb-6 sm:mb-8 leading-relaxed">
                 From initial design consultation to final installation, we provide comprehensive
                 cabinetry solutions for projects of all sizes. Our team works directly with you
                 to ensure seamless integration with your project timeline.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {services.map((service, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0" />
-                    <span className="text-brand-dark">{service}</span>
+                  <div key={index} className="flex items-center gap-2 sm:gap-3">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-brand-blue flex-shrink-0" />
+                    <span className="text-sm sm:text-base text-brand-dark">{service}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-xl">
-              <h3 className="font-heading text-2xl font-semibold text-brand-dark mb-2">
+            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-lg shadow-xl">
+              <h3 className="font-heading text-xl sm:text-2xl font-semibold text-brand-dark mb-2">
                 Contractor Pricing
               </h3>
-              <p className="text-brand-gray mb-6">
+              <p className="text-sm sm:text-base text-brand-gray mb-4 sm:mb-6">
                 Competitive trade pricing for qualified contractors. Volume discounts available.
               </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                  <span className="text-brand-dark">Trade pricing on all products</span>
+              <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-brand-blue flex-shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-brand-dark">Trade pricing on all products</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                  <span className="text-brand-dark">Volume discounts for large projects</span>
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-brand-blue flex-shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-brand-dark">Volume discounts for large projects</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                  <span className="text-brand-dark">Flexible payment terms</span>
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-brand-blue flex-shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-brand-dark">Flexible payment terms</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                  <span className="text-brand-dark">Priority scheduling</span>
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-brand-blue flex-shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-brand-dark">Priority scheduling</span>
                 </li>
               </ul>
               <a
                 href="#contact-form"
-                className="block w-full text-center bg-brand-blue text-white px-6 py-3 rounded-md hover:bg-brand-blue/90 transition-colors duration-200 font-medium"
+                className="block w-full text-center bg-brand-blue text-white px-6 py-3 sm:py-4 rounded-md hover:bg-brand-blue/90 transition-colors duration-200 font-medium min-h-[48px] flex items-center justify-center"
               >
                 Request Trade Pricing
               </a>
@@ -176,20 +176,20 @@ export default function ContractorsPage() {
       </section>
 
       {/* Contact Form */}
-      <section id="contact-form" className="section-padding bg-white">
+      <section id="contact-form" className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-heading text-3xl md:text-4xl font-semibold text-brand-dark mb-4">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold text-brand-dark mb-3 sm:mb-4">
                 Start the Conversation
               </h2>
-              <p className="text-xl text-brand-gray">
-                Tell us about your business and upcoming projects. We'll be in touch within 24 hours.
+              <p className="text-base sm:text-lg md:text-xl text-brand-gray px-2">
+                Tell us about your business and upcoming projects. We&apos;ll be in touch within 24 hours.
               </p>
             </div>
 
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <form className="space-y-4 sm:space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-brand-dark mb-2">
                     Your Name
@@ -216,7 +216,7 @@ export default function ContractorsPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-brand-dark mb-2">
                     Email Address
@@ -249,7 +249,7 @@ export default function ContractorsPage() {
                 <select
                   id="projects"
                   name="projects"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all bg-white"
                 >
                   <option value="">Select...</option>
                   <option value="1-5">1-5 projects</option>
@@ -274,7 +274,7 @@ export default function ContractorsPage() {
 
               <button
                 type="submit"
-                className="w-full bg-brand-blue text-white px-8 py-4 rounded-md hover:bg-brand-blue/90 transition-colors duration-200 font-semibold text-lg"
+                className="w-full bg-brand-blue text-white px-8 py-4 rounded-md hover:bg-brand-blue/90 transition-colors duration-200 font-semibold text-base sm:text-lg min-h-[48px]"
               >
                 Submit Inquiry
               </button>

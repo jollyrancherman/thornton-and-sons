@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[66vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 text-white"
+      className="relative min-h-[66vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-16"
     >
       {/* Background Image Overlay */}
       <div
