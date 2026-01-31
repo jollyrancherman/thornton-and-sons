@@ -10,7 +10,6 @@ export function PortfolioSection() {
     { id: 'all', label: 'All Projects' },
     { id: 'kitchen', label: 'Kitchens' },
     { id: 'living', label: 'Living Spaces' },
-    { id: 'bathroom', label: 'Bathrooms' },
   ];
 
   const projects = [
@@ -30,10 +29,10 @@ export function PortfolioSection() {
     { id: 12, category: 'living', title: 'Living Room Cabinetry', image: '/images/living/living-4_enhanced.jpg' },
     { id: 13, category: 'living', title: 'Den Built-ins', image: '/images/living/living-5_enhanced.jpg' },
     { id: 14, category: 'living', title: 'Fireplace Surround', image: '/images/living/living-6_enhanced.jpg' },
-    // Bathroom projects
-    { id: 15, category: 'bathroom', title: 'Master Bath Vanity', image: '/images/bathroom/bathroom-1_enhanced.jpg' },
-    { id: 16, category: 'bathroom', title: 'Custom Bathroom Cabinetry', image: '/images/bathroom/bathroom-2_enhanced.jpg' },
-    { id: 17, category: 'bathroom', title: 'Double Vanity Installation', image: '/images/bathroom/bathroom-3_enhanced.jpg' },
+    // Additional kitchen projects
+    { id: 15, category: 'kitchen', title: 'Corner Kitchen Cabinetry', image: '/images/bathroom/bathroom-1_enhanced.jpg' },
+    { id: 16, category: 'kitchen', title: 'Kitchen with Custom Range Hood', image: '/images/bathroom/bathroom-2_enhanced.jpg' },
+    { id: 17, category: 'kitchen', title: 'Rustic Kitchen with Island', image: '/images/bathroom/bathroom-3_enhanced.jpg' },
   ];
 
   const filteredProjects = selectedCategory === 'all'
