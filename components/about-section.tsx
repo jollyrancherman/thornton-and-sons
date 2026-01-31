@@ -46,7 +46,7 @@ export function AboutSection() {
                 technology.
               </p>
               <p>
-                Our clients range from luxury home builders to discerning homeowners
+                Our clients range from luxury home builders to homeowners who expect the best
                 undertaking renovation projects valued between $30,000 and $500,000.
                 Each project receives the same meticulous attention to detail,
                 regardless of size or scope.

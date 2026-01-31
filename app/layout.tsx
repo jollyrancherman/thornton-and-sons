@@ -24,7 +24,7 @@ const allura = Allura({
 
 export const metadata: Metadata = {
   title: 'Thornton & Sons Custom Cabinetry | High-End Custom Cabinets',
-  description: 'Premium custom cabinetry for kitchens, offices, and dens. Specializing in custom cabinets, trim packages, and custom doors for discerning homeowners.',
+  description: 'Premium custom cabinetry for kitchens, offices, and dens. Specializing in custom cabinets, trim packages, and custom doors for homeowners who expect the best.',
   keywords: 'custom cabinets, custom cabinetry, kitchen cabinets, office cabinets, custom trim, custom doors, high-end cabinets',
   openGraph: {
     title: 'Thornton & Sons Custom Cabinetry',

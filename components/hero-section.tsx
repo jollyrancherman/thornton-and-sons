@@ -23,7 +23,7 @@ export function HeroSection() {
           Craftsmanship Beyond Compare
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto text-balance">
-          Premium custom cabinetry for discerning homeowners. From concept to completion,
+          Premium custom cabinetry for homeowners who expect the best. From concept to completion,
           we bring your vision to life with unparalleled quality and attention to detail.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

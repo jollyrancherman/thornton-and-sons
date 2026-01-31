@@ -25,7 +25,7 @@ export function Footer() {
               Thornton & Sons
             </h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Premium custom cabinetry for discerning homeowners. Crafting
+              Premium custom cabinetry for homeowners who expect the best. Crafting
               exceptional spaces with unparalleled quality and attention to detail.
             </p>
             <div className="space-y-2 text-sm">

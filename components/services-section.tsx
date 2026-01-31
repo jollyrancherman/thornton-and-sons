@@ -44,7 +44,7 @@ export function ServicesSection() {
             Our Services
           </h2>
           <p className="text-xl text-brand-gray max-w-3xl mx-auto">
-            Specializing in high-end custom cabinetry and millwork for discerning clients
+            Specializing in high-end custom cabinetry and millwork for clients who demand excellence
             who demand excellence in every detail.
           </p>
         </div>
