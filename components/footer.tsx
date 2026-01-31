@@ -25,8 +25,8 @@ export function Footer() {
               Thornton & Sons
             </h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Premium custom cabinetry for homeowners who expect the best. Crafting
-              exceptional spaces with unparalleled quality and attention to detail.
+              Three generations of master craftsmen dedicated to creating premium
+              custom cabinetry. Built on faith, family, and 33 years of excellence.
             </p>
             <div className="space-y-2 text-sm">
               <p>123 Craftsman Lane</p>

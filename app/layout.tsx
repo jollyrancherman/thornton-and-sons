@@ -23,12 +23,12 @@ const allura = Allura({
 });
 
 export const metadata: Metadata = {
-  title: 'Thornton & Sons Custom Cabinetry | High-End Custom Cabinets',
-  description: 'Premium custom cabinetry for kitchens, offices, and dens. Specializing in custom cabinets, trim packages, and custom doors for homeowners who expect the best.',
-  keywords: 'custom cabinets, custom cabinetry, kitchen cabinets, office cabinets, custom trim, custom doors, high-end cabinets',
+  title: 'Thornton & Sons Custom Cabinetry | Three Generations of Excellence',
+  description: 'For over 33 years, the Thornton family has crafted premium custom cabinetry in Lake Tahoe and Incline Village. Three generations of master craftsmen specializing in custom cabinets, trim packages, and custom doors.',
+  keywords: 'custom cabinets, custom cabinetry, kitchen cabinets, Lake Tahoe cabinets, Incline Village cabinetry, custom trim, custom doors, high-end cabinets, family craftsmen',
   openGraph: {
     title: 'Thornton & Sons Custom Cabinetry',
-    description: 'Craftsmanship Beyond Compare - Premium custom cabinetry solutions',
+    description: 'Three Generations of Excellence - Premium custom cabinetry built on faith, family, and craftsmanship',
     type: 'website',
   },
 };

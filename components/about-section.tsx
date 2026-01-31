@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export function AboutSection() {
   const stats = [
-    { icon: Clock, value: '25+', label: 'Years Experience' },
-    { icon: Users, value: '500+', label: 'Happy Clients' },
+    { icon: Clock, value: '33+', label: 'Years Experience' },
+    { icon: Users, value: '3', label: 'Generations' },
     { icon: Award, value: '100%', label: 'Satisfaction Rate' },
     { icon: CheckCircle, value: '$30k-500k', label: 'Project Range' },
   ];
@@ -34,22 +34,24 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-brand-gray text-lg leading-relaxed mb-8">
               <p>
-                For over two decades, Thornton & Sons has been the trusted name in
-                high-end custom cabinetry. What started as a small family workshop has
-                grown into a premier destination for homeowners who refuse to compromise
-                on quality.
+                Thirty-three years ago, Danny Thornton began his journey in fine woodworking
+                alongside his uncle and partner. What started as an apprenticeship quickly
+                became a calling. Over the years, Danny has worked side by side with his
+                brothers and cousins, building not just cabinets, but a legacy rooted in
+                faith, family, and an unwavering work ethic.
               </p>
               <p>
-                Every piece we create is a testament to our commitment to exceptional
-                craftsmanship. We work exclusively with premium materials and employ
-                time-honored woodworking techniques combined with modern precision
-                technology.
+                Danny&apos;s father spent countless hours helping his sons build the business,
+                passing down time-honored techniques and the values that define Thornton & Sons
+                to this day. Every piece we create reflects that heritage—a commitment to the
+                highest quality craftsmanship that honors those who came before us.
               </p>
               <p>
-                Our clients range from luxury home builders to homeowners who expect the best
-                undertaking renovation projects valued between $30,000 and $500,000.
-                Each project receives the same meticulous attention to detail,
-                regardless of size or scope.
+                Today, that legacy continues into a third generation. Danny&apos;s youngest son,
+                Elijah, has chosen to carry on the family tradition, joining as a partner
+                in the business. Together, father and son bring the same meticulous attention
+                to detail and pride in workmanship that has defined Thornton & Sons for
+                over three decades.
               </p>
             </div>
 
