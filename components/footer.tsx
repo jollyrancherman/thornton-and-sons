@@ -29,8 +29,7 @@ export function Footer() {
               custom cabinetry. Built on faith, family, and 33 years of excellence.
             </p>
             <div className="space-y-2 text-sm">
-              <p>123 Craftsman Lane</p>
-              <p>Your City, ST 12345</p>
+              <p>Gardnerville, Nevada</p>
               <p>
                 <a
                   href="tel:+17759013743"

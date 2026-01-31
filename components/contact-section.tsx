@@ -95,9 +95,7 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-brand-dark mb-1">Location</h4>
                   <p className="text-brand-gray">
-                    123 Craftsman Lane
-                    <br />
-                    Your City, ST 12345
+                    Gardnerville, Nevada
                   </p>
                 </div>
               </div>
