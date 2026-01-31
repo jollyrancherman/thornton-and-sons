@@ -1,0 +1,22 @@
+# Source images (not needed for deployment)
+/images
+/fiver
+/iCloud Photos from Sandy Thornton
+
+# Scripts
+/scripts
+
+# Dependencies (handled by Vercel)
+/node_modules
+
+# Build outputs
+/.next
+/out
+/.vercel
+
+# Misc
+.DS_Store
+*.HEIC
+*.heic
+*.MOV
+*.mov
