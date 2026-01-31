@@ -10,9 +10,9 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white overflow-hidden">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Column - Image */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl relative">
@@ -24,12 +24,12 @@ export function AboutSection() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-brand-blue/10 rounded-lg -z-10" />
+            <div className="absolute -bottom-8 -right-8 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-brand-blue/10 rounded-lg -z-10 hidden sm:block" />
           </div>
 
           {/* Right Column - Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark mb-4 sm:mb-6">
               About Thornton & Sons
             </h2>
             <div className="space-y-4 text-brand-gray text-lg leading-relaxed mb-8">
@@ -56,16 +56,16 @@ export function AboutSection() {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={index} className="text-center p-6 bg-brand-light rounded-lg">
-                    <Icon className="w-8 h-8 text-brand-blue mx-auto mb-3" />
-                    <div className="text-3xl font-bold text-brand-dark mb-1">
+                  <div key={index} className="text-center p-3 sm:p-4 md:p-6 bg-brand-light rounded-lg">
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-brand-blue mx-auto mb-2 sm:mb-3" />
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-brand-dark mb-1">
                       {stat.value}
                     </div>
-                    <div className="text-sm text-brand-gray font-medium">
+                    <div className="text-xs sm:text-sm text-brand-gray font-medium">
                       {stat.label}
                     </div>
                   </div>

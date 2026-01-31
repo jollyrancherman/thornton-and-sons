@@ -39,7 +39,7 @@ export function Navigation() {
           {/* Logo */}
           <a
             href="/"
-            className="text-4xl md:text-5xl font-script transition-colors duration-300 leading-none flex items-center text-white drop-shadow-md"
+            className="text-2xl sm:text-3xl md:text-5xl font-script transition-colors duration-300 leading-none flex items-center text-white drop-shadow-md"
           >
             Thornton & Sons
           </a>
@@ -67,7 +67,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 transition-colors text-white hover:text-white/80"
+            className="md:hidden p-3 -mr-2 transition-colors text-white hover:text-white/80 min-w-[44px] min-h-[44px] flex items-center justify-center"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -80,23 +80,23 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 pt-4 border-t border-white/20">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden mt-4 pb-6 pt-4 border-t border-white/20">
+            <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="transition-colors duration-200 font-medium py-2 text-white/90 hover:text-white"
+                  className="transition-colors duration-200 font-medium py-3 px-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </a>
               ))}
               <a
                 href="tel:+17759013743"
-                className="flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-md hover:bg-brand-blue/90 transition-colors duration-200 font-medium"
+                className="flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-4 rounded-md hover:bg-brand-blue/90 transition-colors duration-200 font-medium mt-2 min-h-[48px]"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-5 h-5" />
                 Call Us
               </a>
             </div>

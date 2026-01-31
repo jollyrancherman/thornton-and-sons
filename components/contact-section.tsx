@@ -45,30 +45,30 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="section-padding bg-brand-light">
+    <section id="contact" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-brand-light">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark mb-3 sm:mb-4">
             Start Your Project
           </h2>
-          <p className="text-xl text-brand-gray max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-brand-gray max-w-3xl mx-auto px-2">
             Ready to transform your space? Contact us today for a consultation.
             We&apos;ll discuss your vision and provide expert guidance every step of the way.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-8">
+          <div className="lg:col-span-1 space-y-4 sm:space-y-6 lg:space-y-8">
             {/* Call to Action Button */}
-            <div className="bg-brand-blue text-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4">Call Us Today</h3>
-              <p className="mb-6 opacity-90">
+            <div className="bg-brand-blue text-white p-5 sm:p-6 md:p-8 rounded-lg shadow-lg">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Call Us Today</h3>
+              <p className="mb-4 sm:mb-6 opacity-90 text-sm sm:text-base">
                 Speak directly with our team to discuss your project
               </p>
               <a
                 href="tel:+17759013743"
-                className="flex items-center justify-center gap-2 bg-white text-brand-blue px-6 py-4 rounded-md hover:bg-gray-100 transition-colors duration-200 font-bold text-lg shadow-md"
+                className="flex items-center justify-center gap-2 bg-white text-brand-blue px-4 sm:px-6 py-3 sm:py-4 rounded-md hover:bg-gray-100 transition-colors duration-200 font-bold text-base sm:text-lg shadow-md min-h-[48px]"
               >
                 <Phone className="w-5 h-5" />
                 (775) 901-3743
@@ -76,7 +76,7 @@ export function ContactSection() {
             </div>
 
             {/* Contact Details */}
-            <div className="bg-white p-8 rounded-lg shadow-md space-y-6">
+            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-lg shadow-md space-y-4 sm:space-y-6">
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
                 <div>
@@ -117,8 +117,8 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <form onSubmit={handleSubmit} className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                 <div>
                   <label
                     htmlFor="name"

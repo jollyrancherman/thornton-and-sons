@@ -17,11 +17,11 @@ export function Footer() {
 
   return (
     <footer className="bg-gray-900 text-gray-300">
-      <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div className="container-custom py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <h3 className="text-white text-2xl font-bold mb-4">
+          <div className="sm:col-span-2">
+            <h3 className="text-white text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
               Thornton & Sons
             </h3>
             <p className="text-gray-400 mb-4 leading-relaxed">

@@ -39,36 +39,36 @@ export function ServicesSection() {
   return (
     <section id="services" className="section-padding bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark mb-3 sm:mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-brand-gray max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-brand-gray max-w-3xl mx-auto px-2">
             Three generations of expertise in high-end custom cabinetry and millwork,
             serving clients who demand excellence in every detail.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
               className="group overflow-hidden rounded-lg border border-gray-200 hover:border-brand-blue hover:shadow-xl transition-all duration-300"
             >
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-brand-dark mb-3">
+              <div className="p-4 sm:p-5 md:p-6">
+                <h3 className="text-xl sm:text-2xl font-semibold text-brand-dark mb-2 sm:mb-3">
                   {service.title}
                 </h3>
-                <p className="text-brand-gray leading-relaxed">
+                <p className="text-sm sm:text-base text-brand-gray leading-relaxed">
                   {service.description}
                 </p>
               </div>
