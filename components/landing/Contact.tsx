@@ -17,20 +17,30 @@ export function Contact({ theme }: ContactProps) {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormState({ name: "", email: "", phone: "", message: "" });
+      if (!res.ok) throw new Error("Failed to send");
 
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+      setIsSubmitted(true);
+      setFormState({ name: "", email: "", phone: "", message: "" });
+      setTimeout(() => setIsSubmitted(false), 5000);
+    } catch {
+      setError("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -298,6 +308,10 @@ export function Contact({ theme }: ContactProps) {
                     placeholder="Describe the furniture piece you have in mind..."
                   />
                 </div>
+
+                {error && (
+                  <p className="text-sm text-red-500">{error}</p>
+                )}
 
                 <button
                   type="submit"
