@@ -5,20 +5,20 @@ import './globals.css';
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-heading',
+  variable: '--font-heading-src',
   display: 'swap',
 });
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-sans',
+  variable: '--font-sans-src',
   display: 'swap',
 });
 
 const allura = Allura({
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-script',
+  variable: '--font-script-src',
   display: 'swap',
 });
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${allura.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${allura.variable} font-sans`}>
       <body className="font-sans">
         {children}
       </body>
