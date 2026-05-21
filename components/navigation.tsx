@@ -22,7 +22,6 @@ export function Navigation() {
     { href: '/#portfolio', label: 'Portfolio' },
     { href: '/#about', label: 'About' },
     { href: '/#contact', label: 'Contact' },
-    { href: '/contractors', label: 'Contractors' },
   ];
 
   return (
