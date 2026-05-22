@@ -41,17 +41,18 @@ export function AboutSection() {
                 faith, family, and an unwavering work ethic.
               </p>
               <p>
-                Danny&apos;s father spent countless hours helping his sons build the business,
-                passing down time-honored techniques and the values that define Thornton & Sons
+                Danny&apos;s father spent countless hours helping his sons in the business,
+                passing down his work ethics and the values that define Thornton & Sons
                 to this day. Every piece we create reflects that heritage—a commitment to the
                 highest quality craftsmanship that honors those who came before us.
               </p>
               <p>
                 Today, that legacy continues into a third generation. Danny&apos;s youngest son,
                 Elijah, has chosen to carry on the family tradition, joining as a partner
-                in the business. Together, father and son bring the same meticulous attention
-                to detail and pride in workmanship that has defined Thornton & Sons for
-                over three decades.
+                in the business. Maximus, his oldest son also brings much to the company as
+                well as Kaleb his son in law. Together, father and sons bring the same
+                meticulous attention to detail and pride in workmanship that has defined
+                Thornton & Sons for over three decades.
               </p>
             </div>
 
