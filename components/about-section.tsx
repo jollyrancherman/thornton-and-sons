@@ -18,7 +18,7 @@ export function AboutSection() {
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl relative">
               <Image
                 src="/images/living/living-5_enhanced.jpg"
-                alt="Thornton & Sons Custom Entertainment Center"
+                alt="Thornton & Sons custom Murphy bed and built-in bookcases"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
